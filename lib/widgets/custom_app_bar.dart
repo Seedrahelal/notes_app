@@ -6,9 +6,9 @@ class CustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: const[
-          Text('Notes',style: TextStyle(fontSize: 30)),
+    return const Row(
+      children: [
+        Text('Notes', style: TextStyle(fontSize: 30)),
         Spacer(),
         CustomThemeIcon(),
         SizedBox(width: 7),
@@ -17,4 +17,3 @@ class CustomAppBar extends StatelessWidget {
     );
   }
 }
-
