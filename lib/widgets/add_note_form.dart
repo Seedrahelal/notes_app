@@ -48,7 +48,6 @@ class _AddNoteFormState extends State<AddNoteForm> {
               return CustomButton(
                 isLoading: state is AddNoteLoading ? true : false,
                 onTap: () {
-                  
                   if (formKey.currentState!.validate()) {
                     formKey.currentState!.save();
                     var currentDate =DateTime.now();
