@@ -24,9 +24,11 @@ class CustomButton extends StatelessWidget {
                       color: Colors.white,
                     ),
                   )
-                : const Text('Add',
-                    style:
-                        TextStyle(fontSize: 24, fontWeight: FontWeight.bold))),
+                : const Text('ADD',
+                    style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Pacifico'))),
       ),
     );
   }

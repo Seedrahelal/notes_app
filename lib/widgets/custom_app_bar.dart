@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/custom_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key, required this.title, required this.icon, this.onPressed});
+  const CustomAppBar(
+      {super.key, required this.title, required this.icon, this.onPressed});
   final String title;
   final IconData icon;
   final void Function()? onPressed;
@@ -10,11 +11,12 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(title, style: const TextStyle(fontSize: 30)),
+        Text(title,
+            style: const TextStyle(fontSize: 30, fontFamily: 'Pacifico')),
         const Spacer(),
         const CustomThemeIcon(),
         const SizedBox(width: 7),
-        CustomSearchIcon(onPressed: onPressed, icon: icon)
+        // CustomSearchIcon(onPressed: onPressed, icon: icon)
       ],
     );
   }
